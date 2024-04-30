@@ -1,5 +1,5 @@
 {% set name = "atomrdf" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/atomrdf-{{ version }}.tar.gz
-  sha256: 031e21474860652217721cab003a1c35e330efdcab300351caf0cc4b6694d5f2
+  sha256: 3999724cd04c9b3be01dddb02830e9a78663fd15733fca9485dcccf6b3a4cdd0
 
 build:
   noarch: python
@@ -50,4 +50,3 @@ about:
 extra:
   recipe-maintainers:
     - srmnitc
-    
