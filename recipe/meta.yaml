@@ -1,5 +1,5 @@
 {% set name = "atomrdf" %}
-{% set version = "0.6.4" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/atomrdf-{{ version }}.tar.gz
-  sha256: 3999724cd04c9b3be01dddb02830e9a78663fd15733fca9485dcccf6b3a4cdd0
+  sha256: deea967c8cbb5a772f8e7bf0067eac7c054df5f9828af8c3ec1f7f999807effa
 
 build:
   noarch: python
@@ -31,6 +31,7 @@ requirements:
     - pandas
     - owlready2
     - atomman
+    - mp-api
     - sqlalchemy
 
 test:
