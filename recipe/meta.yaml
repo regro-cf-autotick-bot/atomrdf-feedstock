@@ -1,5 +1,5 @@
 {% set name = "atomrdf" %}
-{% set version = "0.8.10" %}
+{% set version = "0.8.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/atomrdf-{{ version }}.tar.gz
-  sha256: 644fc92c972143a36538d55e6c563d0ab6891a24d0a6ba29ecbcb31011026ae8
+  sha256: 5fd8b28fd3a1faf6bc7027d21e5cda0ea923b74b757322dfd906de4ec6e1ad0a
 
 build:
   noarch: python
