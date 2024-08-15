@@ -1,5 +1,5 @@
 {% set name = "atomrdf" %}
-{% set version = "0.9.7" %}
+{% set version = "0.9.14" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/atomrdf-{{ version }}.tar.gz
-  sha256: 0a1c8402922f63457c0ce659b7a83a2820c90f54ea83cfb02513fee5cde346d9
+  sha256: c9ef1d04b5ea7796444084b1ae335ce9db8ec3b843fb346ce7d09d72643884cb
 
 build:
   noarch: python
@@ -35,6 +35,7 @@ requirements:
     - sqlalchemy
     - aimsgb
     - pymatgen
+    - mendeleev
 
 test:
   imports:
